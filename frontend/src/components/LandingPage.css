@@ -1,0 +1,54 @@
+
+.landing-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.tiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.assistant-tile {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.assistant-tile:hover {
+  transform: translateY(-5px);
+}
+
+.tile-content {
+  text-align: center;
+}
+
+.tile-content .icon {
+  font-size: 3rem;
+}
+
+.tile-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

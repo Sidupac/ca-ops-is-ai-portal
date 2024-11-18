@@ -1,0 +1,32 @@
+/* Message.css */
+
+.message {
+    display: flex;
+    margin: 10px;
+  }
+  
+  .message.user .content {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 5px;
+    align-self: flex-end;
+  }
+  
+  .message.assistant .content {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px;
+    border-radius: 5px;
+    align-self: flex-start;
+  }
+  
+  .avatar {
+    margin-right: 10px;
+  }
+  
+  .content {
+    max-width: 60%;
+    word-wrap: break-word;
+  }
+  

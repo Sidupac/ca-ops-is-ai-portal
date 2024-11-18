@@ -1,0 +1,39 @@
+/* ChatPage.css */
+
+.chat-app {
+    display: flex;
+    height: 100vh;
+    background-color: var(--background-color);
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .chat-header h2 {
+    margin: 0;
+  }
+  
+  .chat-header button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .chat-header button:hover {
+    background-color: var(--secondary-color);
+  }
+  

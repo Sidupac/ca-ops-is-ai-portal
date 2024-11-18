@@ -1,0 +1,217 @@
+/* Sidebar.css */
+
+.sidebar {
+  width: 250px;
+  background-color: #f9f9f9;
+  border-right: 1px solid #ddd;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.sidebar.collapsed {
+  width: 50px;
+}
+
+.sidebar-header {
+  padding: 10px;
+}
+
+.top-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-button {
+  background-color: transparent;
+  color: #333;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.folder-list,
+.chat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.folder-item,
+.chat-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.folder-item.active,
+.chat-item.active {
+  background-color: #e0e0e0;
+}
+
+.folder-item:hover,
+.chat-item:hover {
+  background-color: #f0f0f0;
+}
+
+.folder-item .folder-options,
+.chat-item .chat-options {
+  margin-left: auto;
+  position: absolute;
+  right: 10px;
+}
+
+.folder-options .options-menu,
+.chat-options .options-menu {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  background-color: white;
+  border: 1px solid #ddd;
+  z-index: 100;
+  padding: 5px;
+  width: 150px;
+}
+
+.options-menu .options-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.options-menu .options-item:hover {
+  background-color: #f0f0f0;
+}
+
+.options-menu .options-item svg {
+  margin-right: 8px;
+}
+
+.create-folder {
+  color: #007bff;
+}
+
+.create-folder:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.search-bar input {
+  border: none;
+  flex: 1;
+  padding: 5px;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.search-bar .clear-search {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.chat-icon {
+  margin-right: 10px;
+}
+
+.no-chats {
+  padding: 10px;
+  color: #777;
+}
+
+.folder-item input {
+  border: 1px solid #ccc;
+  padding: 2px;
+  margin-left: 5px;
+  flex: 1;
+}
+
+.folder-delete-confirm {
+  display: flex;
+  position: absolute;
+  right: 10px;
+}
+
+.folder-delete-confirm svg {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.color-palette {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.color-swatch {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.color-swatch:hover {
+  border: 2px solid #000;
+}
+
+.folder-item,
+.chat-item,
+.create-folder,
+.options-menu div {
+  display: flex;
+  align-items: center;
+}
+
+.folder-item svg,
+.chat-item svg,
+.create-folder svg {
+  margin-right: 5px;
+}
+
+.folder-item .folder-options,
+.chat-item .chat-options {
+  visibility: hidden;
+}
+
+.folder-item:hover .folder-options,
+.chat-item:hover .chat-options {
+  visibility: visible;
+}
+
+.chat-item {
+  position: relative;
+}
+
+/* Hide scrollbars */
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.chat-delete-confirm {
+  display: flex;
+  position: absolute;
+  right: 10px;
+}
+
+.chat-delete-confirm svg {
+  margin-left: 5px;
+  cursor: pointer;
+}

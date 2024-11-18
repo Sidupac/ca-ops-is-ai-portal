@@ -1,0 +1,36 @@
+/* global.css */
+
+@import './variables.css';
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+input {
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
